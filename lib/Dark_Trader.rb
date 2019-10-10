@@ -17,7 +17,6 @@ def value_crypto
     page.xpath('//*[@class="price"]').each do |node|
         value_crypto << node.text.delete_prefix("$")
     end
-    
     return value_crypto
 end
 
